@@ -32,7 +32,7 @@ function minSteps(start, end) {
 
 function logSteps(obj, stepCount = 0) {
   if (obj == null) {
-    console.log("Minimum steps " + stepCount);
+    console.log("Minimum steps: " + stepCount);
     console.log("Steps:");
     return;
   }
@@ -40,5 +40,5 @@ function logSteps(obj, stepCount = 0) {
   console.log(obj.data);
 }
 
-let shortest = minSteps([1, 1], [3, 5]);
+let shortest = minSteps([1, 1], [4, 7]);
 logSteps(shortest);
